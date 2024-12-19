@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tribute to Puneeth Rajkumar</title>
+    <style>
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav-btn {
+            background-color: #2c3e50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background-color: #f39c12;
+        }
+
+        /* Section styling */
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Content layout */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .photo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Image gallery grid */
+        #images .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .credits {
+            font-size: 14px;
+        }
+
+        /* Change color of reference links in footer */
+        footer a {
+            color: #3498db; /* Blue color for reference links */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #2980b9; /* Darker blue when hovered */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to Puneeth Rajkumar</h1>
+        <nav>
+            <ul>
+                <li><button class="nav-btn" onclick="showSection('home')">Home</button></li>
+                <li><button class="nav-btn" onclick="showSection('about')">About</button></li>
+                <li><button class="nav-btn" onclick="showSection('awards')">Awards</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section" style="display: block;">
+        <div class="content">
+            <div class="info">
+                <h2>Welcome to the Tribute Page</h2>
+                <p>This tribute page is dedicated to Puneeth Rajkumar, an actor who left an indelible mark on the Kannada film industry. Known for his versatile performances, his unparalleled energy on screen, and his deep connection with his fans, Puneeth was a shining star in the world of cinema.</p>
+                <p>Beyond his acting career, Puneeth was admired for his humility, philanthropy, and his commitment to social causes. His untimely passing has left a void in the hearts of millions, but his legacy continues to inspire countless people.</p>
+                <p>As we celebrate his life and career, we remember the immense joy he brought to us through his films, music, and charitable endeavors. His work in cinema and his contributions to society will forever be cherished.</p>
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x400.png?text=Puneeth+Rajkumar" alt="Puneeth Rajkumar">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section" style="display: none;">
+        <div class="content">
+            <div class="info">
+                <h2>About Puneeth Rajkumar</h2>
+                <p>Puneeth Rajkumar was a celebrated Indian actor, playback singer, and television presenter who worked predominantly in Kannada cinema. He was the son of legendary actor Rajkumar, and from a young age, he was involved in the industry.</p>
+                <p>He made his debut as a lead actor in the film Appu (2002), which became a huge success. Over the years, he became a household name in Karnataka, known for his charming personality, outstanding performances, and philanthropic work.</p>
+                <p>Puneeth was also known for his active involvement in various charitable activities, especially helping underprivileged children and supporting education initiatives.</p>
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x400.png?text=Puneeth+Rajkumar" alt="Puneeth Rajkumar">
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="section" style="display: none;">
+        <div class="content">
+            <div class="info">
+                <h2>Awards and Recognition</h2>
+                <p>Puneeth Rajkumar was recognized with numerous awards throughout his career for his exceptional performances. Some of his major awards include:</p>
+                <ul>
+                    <li>Filmfare Award for Best Actor (South) for Power (2014)</li>
+                    <li>Karnataka State Film Award for Best Actor for Rajakumari (2009)</li>
+                    <li>Several other awards from regional and national film bodies for his contributions to cinema and his outstanding performances.</li>
+                </ul>
+                <p>His work in cinema earned him not only fame but also the love and admiration of millions of fans worldwide. His legacy lives on through his films and charitable work.</p>
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x400.png?text=Puneeth+Rajkumar" alt="Puneeth Rajkumar">
+            </div>
+        </div>
+    </section>
+
+    <section id="images" class="section">
+        <div class="image-gallery">
+            <img src="https://via.placeholder.com/20" alt="Image 1">
+            <img src="https://via.placeholder.com/20" alt="Image 2">
+            <img src="https://via.placeholder.com/20" alt="Image 3">
+        </div>
+    </section>
+
+    <footer>
+        <div class="credits">
+            <p>Credits: Web design by <span style="color: pink;">[Rohitha]</span></p>
+            <p>References: 
+                <a href="https://en.wikipedia.org/wiki/Puneeth_Rajkumar" target="_blank">Wikipedia</a>, 
+                <a href="https://www.imdb.com/name/nm0703085/" target="_blank">IMDb</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            
+            // Show the clicked section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
